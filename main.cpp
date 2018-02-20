@@ -10,15 +10,15 @@ using namespace std;
 #include "SensorFusion.h"
 
 int main (int argc, char **argv) {
-    if (argc < 4) {
-        cerr << "Input Error!!!";
-        return -1;
-    }
+   // if (argc < 4) {
+     //   cerr << "Input Error!!!";
+       // return -1;
+   // }
 
     /** Read Files */
-    FILE *odomFile = fopen(argv[1], "r");
-    FILE *laserFile = fopen(argv[2], "r");
-    FILE *sonarFile = fopen(argv[3], "r");
+    FILE *odomFile = fopen("test1/od.txt", "r");
+    FILE *laserFile = fopen("test1/laser.txt", "r");
+    FILE *sonarFile = fopen("test1/sonar.txt", "r");
 
     double timeStamp;
 
